@@ -18,7 +18,7 @@
             dataTable.addColumn('string', 'Date');
             dataTable.addColumn('number', 'Minute');
 
-            $.getJSON('https://api.github.com/ClubPandore6552/5MCSI_Metriques/commits', function(data) {
+            $.getJSON('https://api.github.com/repos/ClubPandore6552/5MCSI_Metriques/commits', function(data) {
                 data.forEach(function(commit) {
                     var date = commit.commit.author.date;
                     $.getJSON('/extract-minutes/' + date, function(minutesData) {
