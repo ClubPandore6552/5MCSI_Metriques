@@ -23,6 +23,7 @@
     var options = {
       title: 'Évolution des températures de la ville de Tawarano',
       legend: { position: 'none' }
+      colors: ['#3366CC']
     };
     var chart = new google.visualization.Histogram(document.getElementById('chart_div'));
     chart.draw(dataTable, options);
